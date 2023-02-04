@@ -8,5 +8,6 @@
     <checkbox id="pjjc" text="公主竞技场" checked = "false"></checkbox>
     <checkbox id="search" text="探索" checked = "true"></checkbox>
     <checkbox id="dungeons" text="地下城" checked = "true"></checkbox>
-    <checkbox id="kemomimi" text="兽耳助手" checked = "true"></checkbox>
+    <checkbox id="kemomimi" text="兽耳助手签到" checked = "true"></checkbox>
+    <checkbox id="hyperion" text="米游社签到" checked = "true"></checkbox>
 </vertical>

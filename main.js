@@ -13,7 +13,8 @@ schedule = {
     "pjjc": false,
     "search": false,
     "dungeons": false,
-    "kemomimi": false
+    "kemomimi": false,
+    "hyperion": false
 }
 
 async function main() {

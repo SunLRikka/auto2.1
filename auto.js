@@ -19,6 +19,8 @@ async function main() {
     let self = myEngine();
     // 兽耳助手签到
     if (self.execArgv.kemomimi) await kemomimi();
+    // 米游社签到
+    if (self.execArgv.hyperion) await hyperion();
     await pcr(self);
 }
 // 执行主函数
@@ -134,6 +136,25 @@ async function pcr() {
         await adventure();
     }
     showToast("打完了喵");
+}
+
+// 米游社模块
+async function hyperion() {
+    picPath = "./pic/hyperion/"
+    // 启动米游社app
+    launchApp("米游社");
+    // 点击开屏广告跳过按钮
+    await findImage("开屏广告");
+    // 进入签到界面
+    await findImage("签到福利");
+    // 点击签到
+    await findImage("签到");
+    // 返回到主界面
+    performGlobalAction(1);
+    await delay(UITIME);
+    performGlobalAction(1);
+    await delay(500);
+    performGlobalAction(1);
 }
 
 // 通用功能函数
