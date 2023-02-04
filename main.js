@@ -6,7 +6,8 @@ const { delay } = require("lang");
 const { execScriptFile, myEngine } = require('engines');
 const { showToast } = require("toast");
 
-const tasks = ["normalEgg", "jjc", "pjjc", "search", "dungeons","kemomimi"]
+//二者需保持一致
+const tasks = ["normalEgg", "jjc", "pjjc", "search", "dungeons","kemomimi","hyperion"]
 schedule = {
     "normalEgg": false,
     "jjc": false,
