@@ -3,11 +3,14 @@
         <button id="start" text="开始"></button>
         <img id="close" src="@drawable/ic_close_black_48dp" margin="4 0" bg="?selectableItemBackground"/>
     </horizontal>
+    <checkbox id="pcr" text="公主连结日常" checked = "true"></checkbox>
+    <horizontal id = "pcrs" padding="8" orientation = "vertical">
     <checkbox id="normalEgg" text="普通扭蛋" checked = "true"></checkbox>
     <checkbox id="jjc" text="竞技场" checked = "false"></checkbox>
     <checkbox id="pjjc" text="公主竞技场" checked = "false"></checkbox>
     <checkbox id="search" text="探索" checked = "true"></checkbox>
     <checkbox id="dungeons" text="地下城" checked = "true"></checkbox>
+    </horizontal>
     <checkbox id="kemomimi" text="兽耳助手签到" checked = "true"></checkbox>
     <checkbox id="hyperion" text="米游社签到" checked = "true"></checkbox>
 </vertical>
