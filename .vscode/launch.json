@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "autojs",
+            "request": "launch",
+            "stopOnEntry": true,
+            "device": "843de17185c56644",
+            "name": "[Auto.js Pro调试]Redmi M2012K11AC 843de17185c56644"
+        }
+    ]
+}
