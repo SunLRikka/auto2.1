@@ -7,8 +7,10 @@ const { execScriptFile, myEngine } = require('engines');
 const { showToast } = require("toast");
 
 //二者需保持一致
-const tasks = ["normalEgg", "jjc", "pjjc", "search", "dungeons","kemomimi","hyperion"]
+const pcr_count = 6;
+const tasks = ["pcr","normalEgg", "jjc", "pjjc", "search", "dungeons","kemomimi","hyperion"]
 schedule = {
+    "pcr": false,
     "normalEgg": false,
     "jjc": false,
     "pjjc": false,
@@ -39,6 +41,20 @@ async function main() {
         execScriptFile("./auto.js", {arguments : schedule});
         myEngine().forceStop();
     })
+
+    //获取pcr复选框
+    const pcrCheckbox = window.view.findView('pcr');
+    pcrCheckbox.on("click",() =>{
+        // 0 4 8 可见，不可见，隐藏
+        // 如果pcr被选中，则显示
+        if(pcrCheckbox.isChecked()){
+                window.view.findView('pcrs').setVisibility(0);
+        }
+        // 否则隐藏相关选项
+        else{
+                window.view.findView('pcrs').setVisibility(8);
+        }
+    });
     // 显示悬浮窗
     await window.show();
     await delay(200);

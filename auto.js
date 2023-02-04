@@ -21,7 +21,8 @@ async function main() {
     if (self.execArgv.kemomimi) await kemomimi();
     // 米游社签到
     if (self.execArgv.hyperion) await hyperion();
-    await pcr(self);
+    // pcr日常
+    if (self.execArgv.pcr) await pcr(self);
 }
 // 执行主函数
 main();
