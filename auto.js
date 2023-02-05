@@ -97,14 +97,17 @@ async function pcr() {
     await delay(UITIME);
     // 寻找到适龄提示说明进入标题界面
     if (await findImage("标题界面_适龄提示")) await click(1230, 800);
-    // 初次登录寻找跳过签到按钮
-    await click_Point2(await findImage("跳过按钮"));
-    // 等待界面加载
-    await delay(UITIME);
-    // 有人生日
-    await click_Point2(await findImage("跳过按钮"));
-    // 寻找到关闭按钮说明有通知页面
-    await click_Point2(await findImage("关闭按钮"));
+    // 没有说明已经进入游戏
+    else {
+        // 初次登录寻找跳过签到按钮
+        await click_Point2(await findImage("跳过按钮"));
+        // 等待界面加载
+        await delay(UITIME);
+        // 有人生日
+        await click_Point2(await findImage("跳过按钮"));
+        // 寻找到关闭按钮说明有通知页面
+        await click_Point2(await findImage("关闭按钮"));
+    }
     await adventure();
     if (self.execArgv.normalEgg) {
         showToast("普通扭蛋");
