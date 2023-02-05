@@ -145,7 +145,7 @@ async function pcr() {
     await delay(UITIME);
     performGlobalAction(1);
     await delay(500);
-    await findImage("确认按钮_蓝字");
+    await click_Point2(await findImage("确认按钮_蓝字"));
 }
 
 // 米游社模块
@@ -154,11 +154,11 @@ async function hyperion() {
     // 启动米游社app
     launchApp("米游社");
     // 点击开屏广告跳过按钮
-    await findImage("开屏广告");
+    await click_Point2(await findImage("开屏广告"));
     // 进入签到界面
-    await findImage("签到福利");
+    await click_Point2(await findImage("签到福利"));
     // 点击签到
-    await findImage("签到");
+    await click_Point2(await findImage("签到"));
     // 返回到主界面
     performGlobalAction(1);
     await delay(UITIME);
