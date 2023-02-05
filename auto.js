@@ -137,6 +137,12 @@ async function pcr() {
         await adventure();
     }
     showToast("打完了喵");
+    // 返回到主界面
+    performGlobalAction(1);
+    await delay(UITIME);
+    performGlobalAction(1);
+    await delay(500);
+    await findImage("确认按钮_蓝字");
 }
 
 // 米游社模块
