@@ -144,7 +144,7 @@ async function pcr() {
     await delay(UITIME);
     performGlobalAction(1);
     await delay(500);
-    await click_Point2(await findImage("确认按钮_蓝字"));
+    await click_Point2(await findImage("确认按钮_蓝字_退出版"));
 }
 
 // 米游社模块
