@@ -22,7 +22,7 @@ async function main() {
     // 米游社签到
     if (self.execArgv.hyperion) await hyperion();
     // pcr日常
-    if (self.execArgv.pcr) await pcr(self);
+    if (self.execArgv.pcr) await pcr();
 }
 // 执行主函数
 main();
