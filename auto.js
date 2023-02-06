@@ -154,6 +154,8 @@ async function hyperion() {
     launchApp("米游社");
     // 点击开屏广告跳过按钮
     await click_Point2(await findImage("开屏广告"));
+    // 关闭青少年模式提示
+    await click_Point2(await findImage("我知道了"));
     // 进入签到界面
     await click_Point2(await findImage("签到福利"));
     // 点击签到
@@ -585,8 +587,8 @@ async function dungeons() {
                     await click_Point2(await findImage("我的队伍"));
                     // 切换到地下城分组
                     await click_Point2(await findImage("我的队伍_地下城"));
-                    // 呼出第2队 
-                    await click_Point2(await findImage("我的队伍_呼出第2队"));
+                    // 呼出第3队 
+                    await click_Point2(await findImage("我的队伍_呼出第3队"));
                     // 开始战斗
                     await click_Point2(await findImage("战斗开始按钮"));
                     // 开启自动
