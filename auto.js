@@ -156,6 +156,8 @@ async function hyperion() {
     await click_Point2(await findImage("开屏广告"));
     // 关闭青少年模式提示
     await click_Point2(await findImage("我知道了"));
+    // 小签到
+    await click_Point2(await findImage("小签到"));
     // 进入签到界面
     await click_Point2(await findImage("签到福利"));
     // 点击签到
