@@ -491,7 +491,9 @@ async function dungeons() {
             if (await click_Point2(await findImage("挑战按钮"))) {
                 // 我的队伍 
                 await click_Point2(await findImage("我的队伍"));
-                // 呼出攒tp第2队
+                // 切换到地下城分组
+                await click_Point2(await findImage("我的队伍_地下城"));
+                // 呼出第2队
                 await click_Point2(await findImage("我的队伍_呼出第2队"));
                 // 开始战斗
                 await click_Point2(await findImage("战斗开始按钮"));
@@ -516,7 +518,9 @@ async function dungeons() {
             if (await click_Point2(await findImage("挑战按钮"))) {
                 // 我的队伍 
                 await click_Point2(await findImage("我的队伍"));
-                // 呼出攒tp第1队
+                // 切换到地下城分组
+                await click_Point2(await findImage("我的队伍_地下城"));
+                // 呼出第1队
                 await click_Point2(await findImage("我的队伍_呼出第1队"));
                 // 开始战斗
                 await click_Point2(await findImage("战斗开始按钮"));
@@ -582,6 +586,8 @@ async function dungeons() {
                     await click_Point2(await findImage("挑战按钮"));
                     // 我的队伍 
                     await click_Point2(await findImage("我的队伍"));
+                    // 切换到地下城分组
+                    await click_Point2(await findImage("我的队伍_地下城"));
                     // 呼出第3队 
                     await click_Point2(await findImage("我的队伍_呼出第3队"));
                     // 开始战斗
