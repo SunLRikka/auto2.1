@@ -21,10 +21,10 @@ async function main() {
     // 解锁屏幕
     // 点亮屏幕
     wakeUp();
-    await delay(1000);
+    await delay(3000);
     // 上划
     await swipe(600, 2000, 600, 1500, 300);
-    await delay(1000);
+    await delay(3000);
     // 输入密码
     await click(237, 1685);
     await click(237, 1899);
