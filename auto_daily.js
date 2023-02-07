@@ -49,14 +49,12 @@ async function kemomimi() {
     // 启动兽耳助手app
     launchApp("兽耳助手");
     await delay(3000);
-    // 等待开屏广告
-    await findImage("兽耳助手_每日签到");
+    // 跳过开屏广告
+    await click_Point2(await findImage("跳过"));
     // 点击每日签到
-    await click(133, 527);
-    await delay(UITIME);
+    await click_Point2(await findImage("每日签到"));
     // 点击签到
-    await click(513, 644);
-    await delay(UITIME);
+    await click_Point2(await findImage("签到"));
     // 关闭签到弹窗
     await click(549, 181);
     await delay(UITIME);
@@ -64,23 +62,17 @@ async function kemomimi() {
     performGlobalAction(1);
     await delay(UITIME);
     // 点击头像
-    await click(105, 269);
-    await delay(UITIME);
+    await click_Point2(await findImage("头像"));
     // 点击会员
-    await click(164, 787);
-    await delay(UITIME);
+    await click_Point2(await findImage("会员"));
     // 点击会员抽奖
-    await click(516, 1526);
-    await delay(UITIME);
+    await click_Point2(await findImage("会员抽奖"));
     // 关闭抽奖弹窗
-    await click(549, 181);
-    await delay(UITIME);
+    await click_Point2(await findImage("确定"));
     // 点击每日能量
-    await click(516, 1726);
-    await delay(UITIME);
+    await click_Point2(await findImage("每日能量"));
     // 关闭能量弹窗
-    await click(549, 181);
-    await delay(UITIME);
+    await click_Point2(await findImage("确定"));
     // 返回到主界面
     performGlobalAction(1);
     await delay(UITIME);
@@ -88,11 +80,9 @@ async function kemomimi() {
     performGlobalAction(1);
     await delay(UITIME);
     // 点击我的助手
-    await click(549, 2239);
-    await delay(UITIME);
+    await click_Point2(await findImage("我的助手"));
     // 点击兑换
-    await click(968, 685);
-    await delay(UITIME);
+    await click_Point2(await findImage("兑换"));
     // 返回到主界面
     performGlobalAction(1);
     await delay(UITIME);
