@@ -511,12 +511,6 @@ async function dungeons() {
         if (await click_Point2(await findImage("地下城_2层"))) {
             // 挑战
             if (await click_Point2(await findImage("挑战按钮"))) {
-                // 我的队伍 
-                await click_Point2(await findImage("我的队伍"));
-                // 切换到地下城分组
-                await click_Point2(await findImage("我的队伍_地下城"));
-                // 呼出第1队
-                await click_Point2(await findImage("我的队伍_呼出第1队"));
                 // 开始战斗
                 await click_Point2(await findImage("战斗开始按钮"));
                 // 每隔5s轮询一次是否结束
@@ -565,6 +559,12 @@ async function dungeons() {
         if (await click_Point2(await findImage("地下城_5层"))) {
             // 挑战
             if (await click_Point2(await findImage("挑战按钮"))) {
+                // 我的队伍 
+                await click_Point2(await findImage("我的队伍"));
+                // 切换到地下城分组
+                await click_Point2(await findImage("我的队伍_地下城"));
+                // 呼出第1队
+                await click_Point2(await findImage("我的队伍_呼出第1队"));
                 // 开始战斗
                 await click_Point2(await findImage("战斗开始按钮"));
                 // 每隔10s轮询一次是否结束
