@@ -36,6 +36,8 @@ async function main() {
     await kemomimi();
     // 米游社签到
     await hyperion();
+    await qidian();
+    await kuangxiangciweimao();
     // pcr日常
     await pcr();
 }
@@ -149,6 +151,42 @@ async function hyperion() {
     await click_Point2(await findImage("签到福利"));
     // 点击签到
     await click_Point2(await findImage("签到"));
+    // 返回到主界面
+    performGlobalAction(1);
+    await delay(UITIME);
+    performGlobalAction(1);
+    await delay(500);
+    performGlobalAction(1);
+}
+
+// 起点读书模块
+async function qidian() {
+    picPath = "./pic/qidian/"
+    // 启动起点读书app
+    launchApp("起点读书");
+    // 点击签到
+    await click_Point2(await findImage("签到"));
+    // 点击关闭
+    await click_Point2(await findImage("关闭"));
+    // 返回到主界面
+    performGlobalAction(1);
+    await delay(UITIME);
+    performGlobalAction(1);
+    await delay(500);
+    performGlobalAction(1);
+}
+
+// 刺猬猫阅读模块
+async function kuangxiangciweimao() {
+    picPath = "./pic/kuangxiangciweimao/"
+    // 启动刺猬猫阅读app
+    launchApp("刺猬猫阅读");
+    // 点击读书
+    await click_Point2(await findImage("读书"));
+    // 点击签到
+    await click_Point2(await findImage("签到"));
+    // 点击关闭
+    await click_Point2(await findImage("关闭"));
     // 返回到主界面
     performGlobalAction(1);
     await delay(UITIME);
